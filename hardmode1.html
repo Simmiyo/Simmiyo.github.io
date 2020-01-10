@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles/game_styles.css" rel="stylesheet">
+  <link href="styles/font/stylesheet.css" rel="stylesheet">
+  <script src="script/script.js"></script>
+  <title>MatchCardsMemoryGame</title>
+</head>
+<body>
+  <h1 class="page-title">Match The Cards</h1>
+  <h2 class="page-subtitle">~Memory Game~</h2>
+  <div class="overlay-text visible">
+    Click to Begin
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small"> Click to Try Again </span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    GAME WON
+    <span class="overlay-text-small"> Click to Try Again </span>
+  </div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time <span id="time-remaining">100</span>
+      </div>
+      <div class="game-info">
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/addams.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/addams.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/chandelier.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/chandelier.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/clock.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/clock.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/fireplace.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/fireplace.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/hp.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/hp.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/lamp_post.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/lamp_post.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/stained_glass.png">
+      </div>
+    </div>
+      <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/stained_glass.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/venus.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/venus.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/tree.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/tree.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/grave.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/grave.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/gate.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/gate.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/staircase.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backcard.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/staircase.png">
+      </div>
+    </div>
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    ready("mode1");
+})
+</script>    
+    
+</body>
+</html>

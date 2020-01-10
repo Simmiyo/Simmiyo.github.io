@@ -1,0 +1,109 @@
+h1,h2 {
+    text-align: center;
+    font-size: 8vw;
+    color: #990000;
+    padding-top: 10vh;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    font-family: medici_textregular;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-weight: 100;
+    background: radial-gradient(#000000, #1f1f2e);
+}
+
+#Playbutton {
+    font-size: 4vw;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+    background-color: #990000;
+    border: none;
+    border-radius: 0.12em;
+    box-shadow: 0 0.6em #600000;
+    box-sizing: border-box;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#Playbutton:hover {background-color: #cc0000;}
+
+.button:hover {background-color: #cc0000;}
+
+.button:active {
+  background-color: #990000;
+  box-shadow: 0 0.6em #444;
+  transform: translateY(4px);
+}
+
+.dropdown-submenu {
+  position: relative;
+  background-color: #990000;
+}
+
+.dropdown-submenu:hover {background-color: #cc0000;}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+  background-color: #990000;
+}
+
+.dropdown-submenu a:hover {background-color: #cc0000;}
+
+.dropdown-menu {
+    background-color: #990000;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+  color: black;
+  background-color: #990000;
+}
+
+.dropdown-item:focus {
+    background-color: #cc0000;
+}
+
+.dropdown-item {
+    color: black;
+}
+
+.dropdown-submenu .dropdown-menu .dropdown-item:hover {background-color: #cc0000;}
+
+#settingsbutton {
+    color: black;
+    background-color: #990000;
+    cursor: pointer;
+}
+
+#settingsbutton:hover {background-color: #cc0000;}
+
+#settingsMenu {
+    position: absolute;
+    top: 15vw;
+    left: 4vh;
+    color: black; 
+}
+
+@media all and (max-width:30em) {
+    button {
+        display:block;
+    }
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles/game_styles2.css" rel="stylesheet">
+  <link href="styles/font/stylesheet.css" rel="stylesheet">
+  <script src="script/script.js"></script>
+  <title>MatchCardsMemoryGame</title>
+</head>
+<body>
+  <h1 class="page-title">Match The Cards</h1>
+  <h2 class="page-subtitle">~Memory Game~</h2>
+  <div class="overlay-text visible">
+    Click to Begin
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small"> Click to Try Again </span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    GAME WON
+    <span class="overlay-text-small"> Click to Try Again </span>
+  </div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time <span id="time-remaining">100</span>
+      </div>
+      <div class="game-info">
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/enmaai.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/enmaai.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/sora.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/sora.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/kallen.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/kallen.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/lucy.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/lucy.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/misa.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/misa.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/winry.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/winry.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/yuno.png">
+      </div>
+    </div>
+      <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/yuno.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/mayuri.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/mayuri.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/Violet.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/Violet.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/Sana.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/Sana.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/Kurumi.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/Kurumi.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/Risa.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img alt="image" class="backimg" src="images/backanime.png">
+      </div>
+      <div class="card-front card-face">
+        <img alt="image" class="card-value" src="images/Risa.png">
+      </div>
+    </div>
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    ready("mode2");
+})
+</script>
+    
+</body>
+</html>
