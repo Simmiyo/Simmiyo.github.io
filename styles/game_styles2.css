@@ -18,6 +18,7 @@ html {
 body {
   margin: 0;
   background-image: url("bgm2.jpg");
+  background-size: cover;
   text-shadow: 0 0 3px #000, 0 0 5px #FF00FF;
   font-weight: 100;
 }
